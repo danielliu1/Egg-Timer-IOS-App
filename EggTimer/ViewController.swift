@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    let eggTimes = ["Soft": 3, "Hard": 2, "Medium": 4]
+    let eggTimes = ["Soft": 300, "Hard": 200, "Medium": 400]
     var secondsRemaining = 60
     var timer = Timer()
     
