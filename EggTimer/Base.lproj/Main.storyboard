@@ -120,6 +120,18 @@
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6pX-lf-VE2" userLabel="Timer View">
                                         <rect key="frame" x="0.0" y="571.5" width="374" height="246.5"/>
+                                        <subviews>
+                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="1kv-b7-OEl">
+                                                <rect key="frame" x="0.0" y="121" width="374" height="4"/>
+                                                <color key="progressTintColor" red="1" green="0.58800032270000002" blue="0.24353657349999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </progressView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="1kv-b7-OEl" firstAttribute="centerX" secondItem="6pX-lf-VE2" secondAttribute="centerX" id="E0P-ao-1x4"/>
+                                            <constraint firstAttribute="trailing" secondItem="1kv-b7-OEl" secondAttribute="trailing" id="Woc-ax-eoH"/>
+                                            <constraint firstItem="1kv-b7-OEl" firstAttribute="centerY" secondItem="6pX-lf-VE2" secondAttribute="centerY" id="YBM-Ir-vVt"/>
+                                            <constraint firstItem="1kv-b7-OEl" firstAttribute="leading" secondItem="6pX-lf-VE2" secondAttribute="leading" id="mYh-ES-6O9"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
                             </stackView>
@@ -133,6 +145,10 @@
                             <constraint firstItem="3Ke-Se-8o2" firstAttribute="leading" secondItem="kAA-71-g16" secondAttribute="leadingMargin" id="yc2-cq-VbN"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="progressBar" destination="1kv-b7-OEl" id="8JG-bs-Gcf"/>
+                        <outlet property="titleLabel" destination="xnH-x1-FPb" id="cFT-Mb-GpU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
