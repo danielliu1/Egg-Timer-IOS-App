@@ -13,6 +13,9 @@ class ViewController: UIViewController {
     var totalTime = 0
     var timer = Timer()
     var secondsRemaining = 0
+    var totalTime = 0
+    var timer = Timer()
+    var secondsRemaining = 0
     
  
     
